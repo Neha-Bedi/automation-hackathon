@@ -1,8 +1,8 @@
 let p = require("puppeteer");
 let fs = require("fs");
 let url = "https://www.instagram.com/accounts/login/";
-let id = "";
-let pw = "";
+let id = process.argv[2];
+let pw = process.argv[3];
 let tab;
 let totalFollowers;
 let scrolls;
